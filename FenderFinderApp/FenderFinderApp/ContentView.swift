@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var locationService = LocationService()
+    @StateObject var crashReportService = CrashReportService()
+    @State var crashDetected = false
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("FenderFinder")
+                .font(.largeTitle)
+                .bold()
+            Text("Live Crash Detection")
+                .font(.title2)
+                .foregroundColor(.gray)
+            LiveFeedView(/*crashDetected: $crashDetected*/)
+            CrashStatusView(crashDetected: $crashDetected)
         }
-        .padding()
+        .onAppear {
+            locationService.startUpdatingLocation()
+        }
     }
 }
+
 
 #Preview {
     ContentView()

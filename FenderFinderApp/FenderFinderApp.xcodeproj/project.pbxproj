@@ -14,6 +14,18 @@
 		00EC78AC2AF73D3D009C00FB /* FenderFinderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC78AB2AF73D3D009C00FB /* FenderFinderAppTests.swift */; };
 		00EC78B62AF73D3D009C00FB /* FenderFinderAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC78B52AF73D3D009C00FB /* FenderFinderAppUITests.swift */; };
 		00EC78B82AF73D3D009C00FB /* FenderFinderAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC78B72AF73D3D009C00FB /* FenderFinderAppUITestsLaunchTests.swift */; };
+		314B6C8C20BBF3B0F3631702 /* Pods_FenderFinderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EA230401F6115274FAC047 /* Pods_FenderFinderApp.framework */; };
+		46943607352E8B72368F56A4 /* Pods_FenderFinderApp_FenderFinderAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FB8AD509DC615F67B6DE6F /* Pods_FenderFinderApp_FenderFinderAppUITests.framework */; };
+		486AEA673A98AB3B071B293C /* Pods_FenderFinderAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DAA6B8B3CF0F2A4D3B5AAA /* Pods_FenderFinderAppTests.framework */; };
+		8A3AA8582AF7838B0005DD28 /* CrashReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8572AF7838B0005DD28 /* CrashReport.swift */; };
+		8A3AA85A2AF783AC0005DD28 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8592AF783AC0005DD28 /* UserLocation.swift */; };
+		8A3AA85C2AF783E50005DD28 /* CrashReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA85B2AF783E50005DD28 /* CrashReportService.swift */; };
+		8A3AA85E2AF784160005DD28 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA85D2AF784160005DD28 /* LocationService.swift */; };
+		8A3AA8602AF7843A0005DD28 /* LiveFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA85F2AF7843A0005DD28 /* LiveFeedView.swift */; };
+		8A3AA8622AF784590005DD28 /* CrashStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8612AF784590005DD28 /* CrashStatusView.swift */; };
+		8A3AA8642AF7846C0005DD28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8632AF7846C0005DD28 /* Constants.swift */; };
+		8A3AA8662AF7848E0005DD28 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8652AF7848E0005DD28 /* ViewExtensions.swift */; };
+		8A3AA8682AF7900F0005DD28 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8672AF7900F0005DD28 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +57,26 @@
 		00EC78B12AF73D3D009C00FB /* FenderFinderAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenderFinderAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00EC78B52AF73D3D009C00FB /* FenderFinderAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenderFinderAppUITests.swift; sourceTree = "<group>"; };
 		00EC78B72AF73D3D009C00FB /* FenderFinderAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenderFinderAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		106A07EE5046CB449F4463A4 /* Pods-FenderFinderApp-FenderFinderAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenderFinderApp-FenderFinderAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FenderFinderApp-FenderFinderAppUITests/Pods-FenderFinderApp-FenderFinderAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		23DAA6B8B3CF0F2A4D3B5AAA /* Pods_FenderFinderAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenderFinderAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EA230401F6115274FAC047 /* Pods_FenderFinderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenderFinderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		324925F18CBDB306B471ED14 /* Pods-FenderFinderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenderFinderApp.release.xcconfig"; path = "Target Support Files/Pods-FenderFinderApp/Pods-FenderFinderApp.release.xcconfig"; sourceTree = "<group>"; };
+		5EBDBD9BC2A3FF90219BA14A /* Pods-FenderFinderAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenderFinderAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FenderFinderAppTests/Pods-FenderFinderAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A3AA8572AF7838B0005DD28 /* CrashReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashReport.swift; sourceTree = "<group>"; };
+		8A3AA8592AF783AC0005DD28 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		8A3AA85B2AF783E50005DD28 /* CrashReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashReportService.swift; sourceTree = "<group>"; };
+		8A3AA85D2AF784160005DD28 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		8A3AA85F2AF7843A0005DD28 /* LiveFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFeedView.swift; sourceTree = "<group>"; };
+		8A3AA8612AF784590005DD28 /* CrashStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashStatusView.swift; sourceTree = "<group>"; };
+		8A3AA8632AF7846C0005DD28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A3AA8652AF7848E0005DD28 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		8A3AA8672AF7900F0005DD28 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8A3AA8692AF795D70005DD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8A3AA86B2AF79CDB0005DD28 /* default.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.tflite; sourceTree = "<group>"; };
+		8EC0B82F02FA796443B21580 /* Pods-FenderFinderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenderFinderApp.debug.xcconfig"; path = "Target Support Files/Pods-FenderFinderApp/Pods-FenderFinderApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A2F92E1A662C48971876BCCC /* Pods-FenderFinderAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenderFinderAppTests.release.xcconfig"; path = "Target Support Files/Pods-FenderFinderAppTests/Pods-FenderFinderAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1FB8AD509DC615F67B6DE6F /* Pods_FenderFinderApp_FenderFinderAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenderFinderApp_FenderFinderAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E9879C5B2CA9A9CD48BC0E /* Pods-FenderFinderApp-FenderFinderAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenderFinderApp-FenderFinderAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FenderFinderApp-FenderFinderAppUITests/Pods-FenderFinderApp-FenderFinderAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314B6C8C20BBF3B0F3631702 /* Pods_FenderFinderApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486AEA673A98AB3B071B293C /* Pods_FenderFinderAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46943607352E8B72368F56A4 /* Pods_FenderFinderApp_FenderFinderAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +114,8 @@
 				00EC78AA2AF73D3D009C00FB /* FenderFinderAppTests */,
 				00EC78B42AF73D3D009C00FB /* FenderFinderAppUITests */,
 				00EC78972AF73D3A009C00FB /* Products */,
+				C63D28F4C1034215CBAD9CB0 /* Pods */,
+				727373C2C8DDE14392CAA37B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +132,15 @@
 		00EC78982AF73D3A009C00FB /* FenderFinderApp */ = {
 			isa = PBXGroup;
 			children = (
+				8A3AA86B2AF79CDB0005DD28 /* default.tflite */,
+				8A3AA8692AF795D70005DD28 /* Info.plist */,
 				00EC78992AF73D3A009C00FB /* FenderFinderAppApp.swift */,
 				00EC789B2AF73D3A009C00FB /* ContentView.swift */,
+				8A3AA8522AF7825E0005DD28 /* Models */,
+				8A3AA8532AF782680005DD28 /* Services */,
+				8A3AA8542AF782750005DD28 /* Views */,
+				8A3AA8552AF7829A0005DD28 /* Utils */,
+				8A3AA8562AF782A80005DD28 /* Extensions */,
 				00EC789D2AF73D3C009C00FB /* Assets.xcassets */,
 				00EC789F2AF73D3C009C00FB /* FenderFinderApp.entitlements */,
 				00EC78A02AF73D3C009C00FB /* Preview Content */,
@@ -129,6 +173,73 @@
 			path = FenderFinderAppUITests;
 			sourceTree = "<group>";
 		};
+		727373C2C8DDE14392CAA37B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26EA230401F6115274FAC047 /* Pods_FenderFinderApp.framework */,
+				E1FB8AD509DC615F67B6DE6F /* Pods_FenderFinderApp_FenderFinderAppUITests.framework */,
+				23DAA6B8B3CF0F2A4D3B5AAA /* Pods_FenderFinderAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A3AA8522AF7825E0005DD28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AA8572AF7838B0005DD28 /* CrashReport.swift */,
+				8A3AA8592AF783AC0005DD28 /* UserLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A3AA8532AF782680005DD28 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AA85B2AF783E50005DD28 /* CrashReportService.swift */,
+				8A3AA85D2AF784160005DD28 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A3AA8542AF782750005DD28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AA85F2AF7843A0005DD28 /* LiveFeedView.swift */,
+				8A3AA8612AF784590005DD28 /* CrashStatusView.swift */,
+				8A3AA8672AF7900F0005DD28 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A3AA8552AF7829A0005DD28 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AA8632AF7846C0005DD28 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8A3AA8562AF782A80005DD28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A3AA8652AF7848E0005DD28 /* ViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C63D28F4C1034215CBAD9CB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EC0B82F02FA796443B21580 /* Pods-FenderFinderApp.debug.xcconfig */,
+				324925F18CBDB306B471ED14 /* Pods-FenderFinderApp.release.xcconfig */,
+				F1E9879C5B2CA9A9CD48BC0E /* Pods-FenderFinderApp-FenderFinderAppUITests.debug.xcconfig */,
+				106A07EE5046CB449F4463A4 /* Pods-FenderFinderApp-FenderFinderAppUITests.release.xcconfig */,
+				5EBDBD9BC2A3FF90219BA14A /* Pods-FenderFinderAppTests.debug.xcconfig */,
+				A2F92E1A662C48971876BCCC /* Pods-FenderFinderAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00EC78BB2AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderApp" */;
 			buildPhases = (
+				780093DB16783F7341567CBF /* [CP] Check Pods Manifest.lock */,
 				00EC78922AF73D3A009C00FB /* Sources */,
 				00EC78932AF73D3A009C00FB /* Frameworks */,
 				00EC78942AF73D3A009C00FB /* Resources */,
@@ -153,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00EC78BE2AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderAppTests" */;
 			buildPhases = (
+				0EFE91998993F0AC0ACB5996 /* [CP] Check Pods Manifest.lock */,
 				00EC78A32AF73D3D009C00FB /* Sources */,
 				00EC78A42AF73D3D009C00FB /* Frameworks */,
 				00EC78A52AF73D3D009C00FB /* Resources */,
@@ -171,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00EC78C12AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderAppUITests" */;
 			buildPhases = (
+				44B19098FAD641EE9D547E93 /* [CP] Check Pods Manifest.lock */,
 				00EC78AD2AF73D3D009C00FB /* Sources */,
 				00EC78AE2AF73D3D009C00FB /* Frameworks */,
 				00EC78AF2AF73D3D009C00FB /* Resources */,
@@ -254,13 +368,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EFE91998993F0AC0ACB5996 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenderFinderAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44B19098FAD641EE9D547E93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenderFinderApp-FenderFinderAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		780093DB16783F7341567CBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenderFinderApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00EC78922AF73D3A009C00FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3AA8622AF784590005DD28 /* CrashStatusView.swift in Sources */,
+				8A3AA8582AF7838B0005DD28 /* CrashReport.swift in Sources */,
+				8A3AA85C2AF783E50005DD28 /* CrashReportService.swift in Sources */,
+				8A3AA85A2AF783AC0005DD28 /* UserLocation.swift in Sources */,
 				00EC789C2AF73D3A009C00FB /* ContentView.swift in Sources */,
+				8A3AA8602AF7843A0005DD28 /* LiveFeedView.swift in Sources */,
+				8A3AA85E2AF784160005DD28 /* LocationService.swift in Sources */,
+				8A3AA8682AF7900F0005DD28 /* CameraView.swift in Sources */,
 				00EC789A2AF73D3A009C00FB /* FenderFinderAppApp.swift in Sources */,
+				8A3AA8662AF7848E0005DD28 /* ViewExtensions.swift in Sources */,
+				8A3AA8642AF7846C0005DD28 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +605,7 @@
 		};
 		00EC78BC2AF73D3D009C00FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC0B82F02FA796443B21580 /* Pods-FenderFinderApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -420,10 +613,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FenderFinderApp/Preview Content\"";
-				DEVELOPMENT_TEAM = VTDF44SLUM;
+				DEVELOPMENT_TEAM = ZACY5J55B2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FenderFinderApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera PLEASEEEEEE";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = something;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = something;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = something;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -439,7 +637,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackutd.FenderFinderApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackutdx.FenderFinderApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -451,6 +649,7 @@
 		};
 		00EC78BD2AF73D3D009C00FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324925F18CBDB306B471ED14 /* Pods-FenderFinderApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,10 +657,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FenderFinderApp/Preview Content\"";
-				DEVELOPMENT_TEAM = VTDF44SLUM;
+				DEVELOPMENT_TEAM = ZACY5J55B2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FenderFinderApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera PLEASEEEEEE";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = something;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = something;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = something;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -477,7 +681,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackutd.FenderFinderApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackutdx.FenderFinderApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -489,6 +693,7 @@
 		};
 		00EC78BF2AF73D3D009C00FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EBDBD9BC2A3FF90219BA14A /* Pods-FenderFinderAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +717,7 @@
 		};
 		00EC78C02AF73D3D009C00FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F92E1A662C48971876BCCC /* Pods-FenderFinderAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +741,7 @@
 		};
 		00EC78C22AF73D3D009C00FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E9879C5B2CA9A9CD48BC0E /* Pods-FenderFinderApp-FenderFinderAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +764,7 @@
 		};
 		00EC78C32AF73D3D009C00FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 106A07EE5046CB449F4463A4 /* Pods-FenderFinderApp-FenderFinderAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
