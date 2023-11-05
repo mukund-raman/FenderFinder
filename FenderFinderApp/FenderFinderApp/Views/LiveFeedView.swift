@@ -79,21 +79,94 @@ class LiveFeedViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
+//    private func performInference(on pixelBuffer: CVPixelBuffer) -> Bool {
+//        // Preprocess the frame to the format the TensorFlow Lite model expects
+//        // Perform inference with the TensorFlow Lite model
+//        // Interpret the results to determine if a crash is detected
+//        // This is a simplified placeholder logic
+//        do {
+//            try interpreter.copy(Data(), toInputAt: 0)
+//            try interpreter.invoke()
+//            let outputTensor = try interpreter.output(at: 0)
+//            // Interpret the output tensor data to detect a crash
+//            // Return true if a crash is detected, false otherwise
+//        } catch {
+//            print("Failed to perform inference: \(error)")
+//        }
+//        return false
+//    }
+    
     private func performInference(on pixelBuffer: CVPixelBuffer) -> Bool {
-        // Preprocess the frame to the format the TensorFlow Lite model expects
+        // Ensure that the pixel buffer is in the correct format (RGB, etc.)
+        guard let rgbData = preprocess(pixelBuffer: pixelBuffer, modelInputSize: CGSize(width: 168, height: 224)) else {
+            print("Failed to preprocess pixel buffer")
+            return false
+        }
+
         // Perform inference with the TensorFlow Lite model
-        // Interpret the results to determine if a crash is detected
-        // This is a simplified placeholder logic
         do {
-            try interpreter.copy(Data(), toInputAt: 0)
+            // Copy the RGB data to the input tensor
+            try interpreter.copy(rgbData, toInputAt: 0)
+            
+            // Run inference by invoking the interpreter
             try interpreter.invoke()
+            
+            // Get the output tensor data from the interpreter
             let outputTensor = try interpreter.output(at: 0)
+            
             // Interpret the output tensor data to detect a crash
+            // The logic here will depend on the output format of your model
+            // For example, if your model outputs a single float value as a probability:
+            let probabilities = outputTensor.data.toArray(type: Float.self)
+            let crashProbability = probabilities.first ?? 0
+            
+            // Determine if a crash is detected based on the model's probability
+            // This threshold can be adjusted based on your model's behavior
+            let crashThreshold: Float = 0.5
+            let isCrashDetected = crashProbability > crashThreshold
+            
+            if isCrashDetected {
+                print("CRASH DETECTED!!!")
+            }
+            
             // Return true if a crash is detected, false otherwise
+            return isCrashDetected
         } catch {
             print("Failed to perform inference: \(error)")
+            return false
         }
-        return false
+    }
+
+    private func preprocess(pixelBuffer: CVPixelBuffer, modelInputSize: CGSize) -> Data? {
+        // Lock the base address of the pixel buffer
+        CVPixelBufferLockBaseAddress(pixelBuffer, .readOnly)
+        defer { CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly) }
+        
+        // Get the number of bytes per row for the pixel buffer
+        let baseAddress = CVPixelBufferGetBaseAddress(pixelBuffer)
+        let bytesPerRow = CVPixelBufferGetBytesPerRow(pixelBuffer)
+        let width = CVPixelBufferGetWidth(pixelBuffer)
+        let height = CVPixelBufferGetHeight(pixelBuffer)
+        
+        // Create a CGImage from the pixel buffer
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        guard let context = CGContext(data: baseAddress, width: width, height: height,
+                                      bitsPerComponent: 8, bytesPerRow: bytesPerRow, space: colorSpace,
+                                      bitmapInfo: CGBitmapInfo.byteOrder32Little.rawValue | CGImageAlphaInfo.premultipliedFirst.rawValue),
+              let cgImage = context.makeImage() else {
+            return nil
+        }
+        
+        // Create a new UIImage from the CGImage
+        let image = UIImage(cgImage: cgImage)
+        
+        // Resize the image to the input size of the model
+        guard let resizedImage = image.resized(to: modelInputSize) else {
+            return nil
+        }
+        
+        // Convert the UIImage to Data
+        return resizedImage.pixelData()
     }
 }
 
