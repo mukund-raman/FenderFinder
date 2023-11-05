@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00EC789A2AF73D3A009C00FB /* FenderFinderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC78992AF73D3A009C00FB /* FenderFinderAppApp.swift */; };
+		00EC789C2AF73D3A009C00FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC789B2AF73D3A009C00FB /* ContentView.swift */; };
+		00EC789E2AF73D3C009C00FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC789D2AF73D3C009C00FB /* Assets.xcassets */; };
+		00EC78A22AF73D3C009C00FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC78A12AF73D3C009C00FB /* Preview Assets.xcassets */; };
+		00EC78AC2AF73D3D009C00FB /* FenderFinderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC78AB2AF73D3D009C00FB /* FenderFinderAppTests.swift */; };
+		00EC78B62AF73D3D009C00FB /* FenderFinderAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC78B52AF73D3D009C00FB /* FenderFinderAppUITests.swift */; };
+		00EC78B82AF73D3D009C00FB /* FenderFinderAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC78B72AF73D3D009C00FB /* FenderFinderAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00EC78A82AF73D3D009C00FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00EC788E2AF73D3A009C00FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EC78952AF73D3A009C00FB;
+			remoteInfo = FenderFinderApp;
+		};
+		00EC78B22AF73D3D009C00FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00EC788E2AF73D3A009C00FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EC78952AF73D3A009C00FB;
+			remoteInfo = FenderFinderApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EC78962AF73D3A009C00FB /* FenderFinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenderFinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC78992AF73D3A009C00FB /* FenderFinderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenderFinderAppApp.swift; sourceTree = "<group>"; };
+		00EC789B2AF73D3A009C00FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00EC789D2AF73D3C009C00FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00EC789F2AF73D3C009C00FB /* FenderFinderApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FenderFinderApp.entitlements; sourceTree = "<group>"; };
+		00EC78A12AF73D3C009C00FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00EC78A72AF73D3D009C00FB /* FenderFinderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenderFinderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC78AB2AF73D3D009C00FB /* FenderFinderAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenderFinderAppTests.swift; sourceTree = "<group>"; };
+		00EC78B12AF73D3D009C00FB /* FenderFinderAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenderFinderAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC78B52AF73D3D009C00FB /* FenderFinderAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenderFinderAppUITests.swift; sourceTree = "<group>"; };
+		00EC78B72AF73D3D009C00FB /* FenderFinderAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenderFinderAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00EC78932AF73D3A009C00FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC78A42AF73D3D009C00FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC78AE2AF73D3D009C00FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00EC788D2AF73D3A009C00FB = {
+			isa = PBXGroup;
+			children = (
+				00EC78982AF73D3A009C00FB /* FenderFinderApp */,
+				00EC78AA2AF73D3D009C00FB /* FenderFinderAppTests */,
+				00EC78B42AF73D3D009C00FB /* FenderFinderAppUITests */,
+				00EC78972AF73D3A009C00FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00EC78972AF73D3A009C00FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00EC78962AF73D3A009C00FB /* FenderFinderApp.app */,
+				00EC78A72AF73D3D009C00FB /* FenderFinderAppTests.xctest */,
+				00EC78B12AF73D3D009C00FB /* FenderFinderAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00EC78982AF73D3A009C00FB /* FenderFinderApp */ = {
+			isa = PBXGroup;
+			children = (
+				00EC78992AF73D3A009C00FB /* FenderFinderAppApp.swift */,
+				00EC789B2AF73D3A009C00FB /* ContentView.swift */,
+				00EC789D2AF73D3C009C00FB /* Assets.xcassets */,
+				00EC789F2AF73D3C009C00FB /* FenderFinderApp.entitlements */,
+				00EC78A02AF73D3C009C00FB /* Preview Content */,
+			);
+			path = FenderFinderApp;
+			sourceTree = "<group>";
+		};
+		00EC78A02AF73D3C009C00FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00EC78A12AF73D3C009C00FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00EC78AA2AF73D3D009C00FB /* FenderFinderAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				00EC78AB2AF73D3D009C00FB /* FenderFinderAppTests.swift */,
+			);
+			path = FenderFinderAppTests;
+			sourceTree = "<group>";
+		};
+		00EC78B42AF73D3D009C00FB /* FenderFinderAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00EC78B52AF73D3D009C00FB /* FenderFinderAppUITests.swift */,
+				00EC78B72AF73D3D009C00FB /* FenderFinderAppUITestsLaunchTests.swift */,
+			);
+			path = FenderFinderAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00EC78952AF73D3A009C00FB /* FenderFinderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC78BB2AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderApp" */;
+			buildPhases = (
+				00EC78922AF73D3A009C00FB /* Sources */,
+				00EC78932AF73D3A009C00FB /* Frameworks */,
+				00EC78942AF73D3A009C00FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FenderFinderApp;
+			productName = FenderFinderApp;
+			productReference = 00EC78962AF73D3A009C00FB /* FenderFinderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00EC78A62AF73D3D009C00FB /* FenderFinderAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC78BE2AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderAppTests" */;
+			buildPhases = (
+				00EC78A32AF73D3D009C00FB /* Sources */,
+				00EC78A42AF73D3D009C00FB /* Frameworks */,
+				00EC78A52AF73D3D009C00FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EC78A92AF73D3D009C00FB /* PBXTargetDependency */,
+			);
+			name = FenderFinderAppTests;
+			productName = FenderFinderAppTests;
+			productReference = 00EC78A72AF73D3D009C00FB /* FenderFinderAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00EC78B02AF73D3D009C00FB /* FenderFinderAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC78C12AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderAppUITests" */;
+			buildPhases = (
+				00EC78AD2AF73D3D009C00FB /* Sources */,
+				00EC78AE2AF73D3D009C00FB /* Frameworks */,
+				00EC78AF2AF73D3D009C00FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EC78B32AF73D3D009C00FB /* PBXTargetDependency */,
+			);
+			name = FenderFinderAppUITests;
+			productName = FenderFinderAppUITests;
+			productReference = 00EC78B12AF73D3D009C00FB /* FenderFinderAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00EC788E2AF73D3A009C00FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					00EC78952AF73D3A009C00FB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					00EC78A62AF73D3D009C00FB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 00EC78952AF73D3A009C00FB;
+					};
+					00EC78B02AF73D3D009C00FB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 00EC78952AF73D3A009C00FB;
+					};
+				};
+			};
+			buildConfigurationList = 00EC78912AF73D3A009C00FB /* Build configuration list for PBXProject "FenderFinderApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00EC788D2AF73D3A009C00FB;
+			productRefGroup = 00EC78972AF73D3A009C00FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00EC78952AF73D3A009C00FB /* FenderFinderApp */,
+				00EC78A62AF73D3D009C00FB /* FenderFinderAppTests */,
+				00EC78B02AF73D3D009C00FB /* FenderFinderAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00EC78942AF73D3A009C00FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC78A22AF73D3C009C00FB /* Preview Assets.xcassets in Resources */,
+				00EC789E2AF73D3C009C00FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC78A52AF73D3D009C00FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC78AF2AF73D3D009C00FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00EC78922AF73D3A009C00FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC789C2AF73D3A009C00FB /* ContentView.swift in Sources */,
+				00EC789A2AF73D3A009C00FB /* FenderFinderAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC78A32AF73D3D009C00FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC78AC2AF73D3D009C00FB /* FenderFinderAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC78AD2AF73D3D009C00FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC78B82AF73D3D009C00FB /* FenderFinderAppUITestsLaunchTests.swift in Sources */,
+				00EC78B62AF73D3D009C00FB /* FenderFinderAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00EC78A92AF73D3D009C00FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EC78952AF73D3A009C00FB /* FenderFinderApp */;
+			targetProxy = 00EC78A82AF73D3D009C00FB /* PBXContainerItemProxy */;
+		};
+		00EC78B32AF73D3D009C00FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EC78952AF73D3A009C00FB /* FenderFinderApp */;
+			targetProxy = 00EC78B22AF73D3D009C00FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00EC78B92AF73D3D009C00FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00EC78BA2AF73D3D009C00FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		00EC78BC2AF73D3D009C00FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FenderFinderApp/FenderFinderApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FenderFinderApp/Preview Content\"";
+				DEVELOPMENT_TEAM = VTDF44SLUM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackutd.FenderFinderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00EC78BD2AF73D3D009C00FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FenderFinderApp/FenderFinderApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FenderFinderApp/Preview Content\"";
+				DEVELOPMENT_TEAM = VTDF44SLUM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackutd.FenderFinderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00EC78BF2AF73D3D009C00FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VTDF44SLUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackutd.FenderFinderAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FenderFinderApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FenderFinderApp";
+			};
+			name = Debug;
+		};
+		00EC78C02AF73D3D009C00FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VTDF44SLUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackutd.FenderFinderAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FenderFinderApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FenderFinderApp";
+			};
+			name = Release;
+		};
+		00EC78C22AF73D3D009C00FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VTDF44SLUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackutd.FenderFinderAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FenderFinderApp;
+			};
+			name = Debug;
+		};
+		00EC78C32AF73D3D009C00FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VTDF44SLUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackutd.FenderFinderAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FenderFinderApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00EC78912AF73D3A009C00FB /* Build configuration list for PBXProject "FenderFinderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC78B92AF73D3D009C00FB /* Debug */,
+				00EC78BA2AF73D3D009C00FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC78BB2AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC78BC2AF73D3D009C00FB /* Debug */,
+				00EC78BD2AF73D3D009C00FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC78BE2AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC78BF2AF73D3D009C00FB /* Debug */,
+				00EC78C02AF73D3D009C00FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC78C12AF73D3D009C00FB /* Build configuration list for PBXNativeTarget "FenderFinderAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC78C22AF73D3D009C00FB /* Debug */,
+				00EC78C32AF73D3D009C00FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00EC788E2AF73D3A009C00FB /* Project object */;
+}
