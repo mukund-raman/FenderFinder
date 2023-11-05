@@ -10,6 +10,11 @@ import AVFoundation
 import Combine
 import TensorFlowLite
 
+import SwiftUI
+import AVFoundation
+import Combine
+import TensorFlowLite
+
 struct LiveFeedView: View {
     @StateObject private var viewModel = LiveFeedViewModel()
     
@@ -46,11 +51,15 @@ class LiveFeedViewModel: ObservableObject {
     private var interpreter: Interpreter
     
     init() {
-//        let modelPath = Bundle.main.path(forResource: "default", ofType: "tflite", inDirectory: <#T##String?#>)!
-        let modelPath = URL(fileURLWithPath: #file).deletingLastPathComponent().deletingLastPathComponent().path() + "default.tflite"
-        print("modelPath: " + modelPath)
-        interpreter = try! Interpreter(modelPath: modelPath)
-        try? interpreter.allocateTensors()
+        guard let modelPath = Bundle.main.path(forResource: "default", ofType: "tflite") else {
+            fatalError("Failed to find the model file.")
+        }
+        do {
+            interpreter = try Interpreter(modelPath: modelPath)
+            try interpreter.allocateTensors()
+        } catch {
+            fatalError("Failed to create the interpreter with error: \(error.localizedDescription)")
+        }
     }
     
     func startDetection() {
@@ -58,14 +67,13 @@ class LiveFeedViewModel: ObservableObject {
         
         // Subscribe to `cameraFramePublisher` to process frames and perform inference
         cameraFramePublisher
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] pixelBuffer in
                 // Process the frame with the TensorFlow Lite model
                 let isCrash = self?.performInference(on: pixelBuffer) ?? false
-                DispatchQueue.main.async {
-                    self?.crashDetected = isCrash
-                    if isCrash {
-                        // Send crash report to the database
-                    }
+                self?.crashDetected = isCrash
+                if isCrash {
+                    // Send crash report to the database
                 }
             }
             .store(in: &cancellables)
@@ -88,10 +96,6 @@ class LiveFeedViewModel: ObservableObject {
         return false
     }
 }
-
-// `CameraView` would be a `UIViewControllerRepresentable` that sets up the camera feed
-// and sends frames to `cameraFramePublisher`. It's not implemented here but would be similar
-// to the `LiveFeedView` example provided earlier, with the addition of frame capture logic.
 
 struct LiveFeedView_Previews: PreviewProvider {
     static var previews: some View {

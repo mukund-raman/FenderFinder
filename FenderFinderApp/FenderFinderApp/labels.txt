@@ -1,0 +1,2 @@
+0 Crash
+1 Not Crash

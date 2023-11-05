@@ -19,7 +19,7 @@ struct CameraView: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: CameraViewController, context: Context) {
-        // Here you can update the view controller when your SwiftUI state changes
+        // This method intentionally left blank
     }
 }
 
@@ -27,43 +27,87 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     var cameraFramePublisher: PassthroughSubject<CVPixelBuffer, Never>?
     private let captureSession = AVCaptureSession()
     private let videoOutput = AVCaptureVideoDataOutput()
+    private var previewLayer: AVCaptureVideoPreviewLayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCaptureSession()
+        checkPermissionsAndSetupCaptureSession()
+    }
+
+    private func checkPermissionsAndSetupCaptureSession() {
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+            case .authorized:
+                setupCaptureSession()
+            case .notDetermined:
+                AVCaptureDevice.requestAccess(for: .video) { granted in
+                    if granted {
+                        DispatchQueue.main.async {
+                            self.setupCaptureSession()
+                        }
+                    }
+                }
+            case .denied, .restricted:
+                // Handle the error case where the user has previously denied access.
+                return
+            @unknown default:
+                // Handle future cases
+                return
+        }
     }
 
     private func setupCaptureSession() {
-        captureSession.beginConfiguration()
-        
-        // Set the session preset as you wish
-        captureSession.sessionPreset = .high
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.captureSession.beginConfiguration()
+            
+            // Set the session preset as you wish
+            self.captureSession.sessionPreset = .high
 
-        // Set up the video input
-        guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
-              let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice),
-              captureSession.canAddInput(videoDeviceInput) else {
-            return
+            // Set up the video input
+            guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
+                  let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice),
+                  self.captureSession.canAddInput(videoDeviceInput) else {
+                return
+            }
+            self.captureSession.addInput(videoDeviceInput)
+
+            // Set up the video output
+            self.videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
+            self.videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
+            guard self.captureSession.canAddOutput(self.videoOutput) else { return }
+            self.captureSession.addOutput(self.videoOutput)
+
+            self.captureSession.commitConfiguration()
+            
+            DispatchQueue.main.async {
+                self.addPreviewLayer()
+            }
+
+            // Start the session
+            self.captureSession.startRunning()
         }
-        captureSession.addInput(videoDeviceInput)
+    }
+    
+    private func addPreviewLayer() {
+        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        previewLayer?.videoGravity = .resizeAspectFill
+        previewLayer?.frame = view.bounds
+        if let previewLayer = self.previewLayer {
+            view.layer.insertSublayer(previewLayer, at: 0)
+        }
+    }
 
-        // Set up the video output
-        videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
-        videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
-        guard captureSession.canAddOutput(videoOutput) else { return }
-        captureSession.addOutput(videoOutput)
-
-        captureSession.commitConfiguration()
-
-        // Start the session
-        captureSession.startRunning()
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        previewLayer?.frame = view.bounds
     }
 
     // MARK: - AVCaptureVideoDataOutputSampleBufferDelegate
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         // Publish the frame to be processed by the SwiftUI view
-        cameraFramePublisher?.send(pixelBuffer)
+        DispatchQueue.main.async {
+            self.cameraFramePublisher?.send(pixelBuffer)
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {

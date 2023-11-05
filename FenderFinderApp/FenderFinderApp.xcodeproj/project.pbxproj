@@ -26,6 +26,8 @@
 		8A3AA8642AF7846C0005DD28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8632AF7846C0005DD28 /* Constants.swift */; };
 		8A3AA8662AF7848E0005DD28 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8652AF7848E0005DD28 /* ViewExtensions.swift */; };
 		8A3AA8682AF7900F0005DD28 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AA8672AF7900F0005DD28 /* CameraView.swift */; };
+		8A3AA8702AF79F430005DD28 /* default.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 8A3AA86E2AF79F430005DD28 /* default.tflite */; };
+		8A3AA8712AF79F430005DD28 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A3AA86F2AF79F430005DD28 /* labels.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +74,8 @@
 		8A3AA8652AF7848E0005DD28 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		8A3AA8672AF7900F0005DD28 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		8A3AA8692AF795D70005DD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8A3AA86B2AF79CDB0005DD28 /* default.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.tflite; sourceTree = "<group>"; };
+		8A3AA86E2AF79F430005DD28 /* default.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.tflite; sourceTree = "<group>"; };
+		8A3AA86F2AF79F430005DD28 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
 		8EC0B82F02FA796443B21580 /* Pods-FenderFinderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenderFinderApp.debug.xcconfig"; path = "Target Support Files/Pods-FenderFinderApp/Pods-FenderFinderApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A2F92E1A662C48971876BCCC /* Pods-FenderFinderAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenderFinderAppTests.release.xcconfig"; path = "Target Support Files/Pods-FenderFinderAppTests/Pods-FenderFinderAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E1FB8AD509DC615F67B6DE6F /* Pods_FenderFinderApp_FenderFinderAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenderFinderApp_FenderFinderAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +135,8 @@
 		00EC78982AF73D3A009C00FB /* FenderFinderApp */ = {
 			isa = PBXGroup;
 			children = (
-				8A3AA86B2AF79CDB0005DD28 /* default.tflite */,
+				8A3AA86E2AF79F430005DD28 /* default.tflite */,
+				8A3AA86F2AF79F430005DD28 /* labels.txt */,
 				8A3AA8692AF795D70005DD28 /* Info.plist */,
 				00EC78992AF73D3A009C00FB /* FenderFinderAppApp.swift */,
 				00EC789B2AF73D3A009C00FB /* ContentView.swift */,
@@ -348,7 +352,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				00EC78A22AF73D3C009C00FB /* Preview Assets.xcassets in Resources */,
+				8A3AA8702AF79F430005DD28 /* default.tflite in Resources */,
 				00EC789E2AF73D3C009C00FB /* Assets.xcassets in Resources */,
+				8A3AA8712AF79F430005DD28 /* labels.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
